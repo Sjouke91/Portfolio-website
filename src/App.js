@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import Navigation from "./component/Navbar";
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{ position: "absolute", zIndex: 2 }}>
+        <Navigation></Navigation>
+      </div>
+      <div>
+        <Home></Home>
+        <div style={{ display: "flex" }}>
+          <img
+            src="https://freepngimg.com/thumb/graphic_design/6-2-graphic-design-transparent.png"
+            style={{
+              position: "relative",
+              top: "-250px",
+              zIndex: -5,
+              left: "-80px",
+            }}
+          ></img>
+        </div>
+        <About></About>
+      </div>
     </div>
   );
 }
