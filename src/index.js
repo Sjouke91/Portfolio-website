@@ -6,11 +6,14 @@ import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@material-ui/core";
 import theme from "./theme";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <App />
+      <Router>
+        <App />
+      </Router>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")

@@ -2,12 +2,30 @@ import React from "react";
 import { Grid, Typography, Button } from "@material-ui/core";
 import "./About.scss";
 import profilePicture from "./Schets.jpg";
+import Navigation from "../../component/Navbar";
 
 export default function About() {
   return (
-    <div className="background-about">
-      <Grid container>
-        <Grid item xs={5}>
+    <div className="background-about" style={{ position: "relative" }}>
+      <div style={{ position: "absolute", zIndex: 2 }}>
+        <Navigation color="dark"></Navigation>
+      </div>
+      <div style={{ display: "flex" }}>
+        <img
+          src="https://freepngimg.com/thumb/graphic_design/6-2-graphic-design-transparent.png"
+          style={{
+            position: "absolute",
+            bottom: "-30vh",
+            width: "100vw",
+          }}
+        ></img>
+      </div>
+      <Grid
+        container
+        style={{ display: "flex", alignItems: "center", marginTop: "10%" }}
+      >
+        <Grid item xs={1}></Grid>
+        <Grid item xs={3}>
           <div>
             <img
               src={profilePicture}
@@ -15,8 +33,9 @@ export default function About() {
             ></img>
           </div>
         </Grid>
+        <Grid item xs={1}></Grid>
         <Grid item xs={6}>
-          <div style={{ padding: "80px", textAlign: "left" }}>
+          <div style={{ paddingLeft: "80px", textAlign: "left" }}>
             <Typography
               variant="h4"
               style={{ fontWeight: 500, marginBottom: "20px" }}
@@ -24,7 +43,7 @@ export default function About() {
               About me
             </Typography>
 
-            <Typography variant="p" style={{ fontWeight: 400 }}>
+            <Typography variant="p" style={{ fontWeight: 500 }}>
               I'm a junior full-stack developer and I have set my mind on
               further develop my skills. In 2020 I've decided it was time for me
               to switch gears and give my career a new direction. With a

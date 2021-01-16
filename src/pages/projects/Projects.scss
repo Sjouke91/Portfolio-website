@@ -1,0 +1,24 @@
+.projects-background {
+  display: relative;
+  height: 100vh;
+
+  .top-half {
+    height: 20vh;
+  }
+  .content-half {
+    height: 60vh;
+    background-image: linear-gradient(
+      50deg,
+      rgb(22, 3, 68),
+      rgb(105, 21, 21),
+      rgb(182, 4, 4)
+    );
+    .project-board:hover {
+      cursor: pointer;
+      transform: scale(1.02);
+    }
+  }
+  .bottom-half {
+    height: 20vh;
+  }
+}

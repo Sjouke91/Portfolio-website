@@ -6,7 +6,7 @@ const theme = createMuiTheme({
     primary: {
       main: blueGrey[500],
     },
-    secondary: { main: amber[500], contrastText: blueGrey[800] },
+    secondary: { main: amber[500], contrastText: blueGrey[50] },
   },
   typography: {
     fontFamily: "roboto",
