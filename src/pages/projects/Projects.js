@@ -2,12 +2,17 @@ import React from "react";
 import "./Projects.scss";
 import { projects } from "./components/projects";
 import ProjectCard from "./components/ProjectCard";
+import Navigation from "../../component/Navbar";
 
 export default function Projects() {
   const fittrack = projects[0];
 
   return (
     <div className="projects-background">
+      <div style={{ position: "absolute", zIndex: 2 }}>
+        <Navigation color="black"></Navigation>
+      </div>
+
       <div className="top-half"></div>
       <div
         className="content-half"
@@ -20,7 +25,7 @@ export default function Projects() {
       >
         {projects.map((p) => {
           return (
-            <div className="project-board">
+            <div key={p.title} className="project-board">
               <ProjectCard
                 title={p.title}
                 content={p.content}

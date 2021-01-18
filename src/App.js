@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App" style={{ position: "relative" }}>
       <div style={{ position: "absolute", zIndex: 2 }}>
-        <Navigation></Navigation>
+        <Navigation color="white"></Navigation>
       </div>
       <div>
         <Switch>

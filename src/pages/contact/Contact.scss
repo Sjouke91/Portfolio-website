@@ -1,0 +1,13 @@
+.contact-parent {
+  background-image: url("https://inspiringjourneys.com/assets/Uploads/lake-marian-fiordland-national-park-shutterstock_655246396-EDIT-HERO__FocusFillWzE2MDAsODIwLCJ5IiwyNDZd.jpg");
+  background-repeat: no-repeat;
+  z-index: -10;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}

@@ -1,13 +1,16 @@
 import { createMuiTheme } from "@material-ui/core";
-import { blueGrey, amber } from "@material-ui/core/colors";
+import { red } from "@material-ui/core/colors";
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: blueGrey[500],
+      main: "#00897b",
     },
-    secondary: { main: amber[500], contrastText: blueGrey[50] },
+    secondary: {
+      main: "#ffc107",
+    },
   },
+
   typography: {
     fontFamily: "roboto",
   },
