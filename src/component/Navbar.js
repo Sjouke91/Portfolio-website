@@ -39,6 +39,14 @@ export default function Navigation({ color }) {
         >
           About
         </Nav.Link>
+        <Nav.Link
+          className="navbarItem"
+          as={NavLink}
+          to="/contact"
+          style={{ color: color }}
+        >
+          Contact
+        </Nav.Link>
       </Nav>
     </Navbar>
   );
