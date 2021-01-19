@@ -8,7 +8,6 @@ import Socials from "./Socials";
 import Navigation from "../../component/Navbar";
 
 export default function Contact() {
-  console.log("data", contactData);
   return (
     <div
       className="contact-parent"

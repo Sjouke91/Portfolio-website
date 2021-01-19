@@ -24,3 +24,9 @@ export const projects = [
       "Kanban is a workflow management method for defining, managing and improving services that deliver knowledge work. It aims to help you visualize your work, maximize efficiency, and improve continuously. From Japanese, kanban is translated as billboard or signboard.",
   },
 ];
+
+export default function addProjectToArray(newProject) {
+  projects.push(newProject);
+
+  return projects;
+}
