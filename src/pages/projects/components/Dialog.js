@@ -16,12 +16,17 @@ export default function PopUpDialog({ addProject, open, setOpen }) {
   return (
     <div>
       <Dialog aria-labelledby="simple-dialog-title" open={open}>
-        <DialogTitle style={{ display: "flex" }} id="simple-dialog-title">
-          New project
-          <IconButton onClick={setOpen} style={{ marginLeft: "160px" }}>
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <DialogTitle id="simple-dialog-title" style={{ marginRight: "auto" }}>
+            New project
+          </DialogTitle>
+          <IconButton
+            onClick={setOpen}
+            style={{ width: "2vw", height: "2vw", margin: "10px" }}
+          >
             <CloseIcon />
           </IconButton>
-        </DialogTitle>
+        </div>
         <form
           noValidate
           autoComplete="off"
