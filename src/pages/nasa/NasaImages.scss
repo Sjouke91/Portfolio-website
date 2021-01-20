@@ -1,0 +1,22 @@
+.background-nasa {
+  position: relative;
+  width: 100vw;
+  height: 100vh; /* height:width ratio = 9/16 = .5625  */
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.349);
+
+  .overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    .nasa-picture {
+      width: 100vw;
+      height: 100vh; /* height:width ratio = 9/16 = .5625  */
+      max-height: 100vh;
+      max-width: 177.78vh; /* 16/9 = 1.778 */
+    }
+  }
+}

@@ -47,6 +47,14 @@ export default function Navigation({ color }) {
         >
           Contact
         </Nav.Link>
+        <Nav.Link
+          className="navbarItem"
+          as={NavLink}
+          to="/nasa"
+          style={{ color: color }}
+        >
+          Nasa
+        </Nav.Link>
       </Nav>
     </Navbar>
   );

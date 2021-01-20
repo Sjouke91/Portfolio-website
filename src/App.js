@@ -6,6 +6,8 @@ import { Switch, Route } from "react-router-dom";
 import Projects from "./pages/projects/Projects";
 import Contact from "./pages/contact/Contact";
 
+import NasaImages from "./pages/nasa/NasaImages";
+
 function App() {
   return (
     <div className="App" style={{ position: "relative" }}>
@@ -18,6 +20,7 @@ function App() {
           <Route path="/about" component={About}></Route>
           <Route path="/projects" component={Projects}></Route>
           <Route path="/contact" component={Contact}></Route>
+          <Route path="/nasa" component={NasaImages}></Route>
         </Switch>
       </div>
     </div>
