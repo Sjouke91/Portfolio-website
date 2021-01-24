@@ -8,6 +8,7 @@ import Contact from "./pages/contact/Contact";
 import Animation from "./pages/animation/Animation";
 
 import NasaImages from "./pages/nasa/NasaImages";
+import Bollie from "./pages/bolComponents/Bollie";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" component={Contact}></Route>
           <Route path="/nasa" component={NasaImages}></Route>
           <Route path="/animation" component={Animation}></Route>
+          <Route path="/bollie" component={Bollie}></Route>
         </Switch>
       </div>
     </div>

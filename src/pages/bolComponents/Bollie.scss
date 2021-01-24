@@ -1,0 +1,63 @@
+.bollie-background {
+  background-color: hsla(200, 100%, 20%);
+  height: 100vh;
+  color: white;
+
+  .center-column {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    .center-content {
+      width: 79vw;
+
+      overflow: hidden;
+      position: relative;
+
+      .category-pick {
+        text-align: start;
+        background-color: white;
+
+        .title {
+          margin: 20px 0;
+          color: black;
+        }
+
+        .btn-styling {
+          background-color: white;
+          height: 5vh;
+          width: 4vh;
+          border: none;
+          color: black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          display: inline-block;
+          cursor: pointer;
+          z-index: 100;
+          position: absolute;
+          margin-top: 9vh;
+        }
+        .disabled {
+          background-color: rgba(255, 255, 255, 0.555);
+        }
+
+        .button-forward {
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          right: 0;
+        }
+        .button-back {
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          left: 0;
+        }
+
+        .category-caroussel {
+          display: flex;
+          transition: transform ease;
+        }
+      }
+    }
+  }
+}
