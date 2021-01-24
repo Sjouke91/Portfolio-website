@@ -5,6 +5,7 @@ import About from "./pages/about/About";
 import { Switch, Route } from "react-router-dom";
 import Projects from "./pages/projects/Projects";
 import Contact from "./pages/contact/Contact";
+import Animation from "./pages/animation/Animation";
 
 import NasaImages from "./pages/nasa/NasaImages";
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/projects" component={Projects}></Route>
           <Route path="/contact" component={Contact}></Route>
           <Route path="/nasa" component={NasaImages}></Route>
+          <Route path="/animation" component={Animation}></Route>
         </Switch>
       </div>
     </div>

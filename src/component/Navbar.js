@@ -55,6 +55,14 @@ export default function Navigation({ color }) {
         >
           Nasa
         </Nav.Link>
+        <Nav.Link
+          className="navbarItem"
+          as={NavLink}
+          to="/animation"
+          style={{ color: color }}
+        >
+          Animation
+        </Nav.Link>
       </Nav>
     </Navbar>
   );
