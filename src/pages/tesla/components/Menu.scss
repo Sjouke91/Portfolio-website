@@ -1,0 +1,29 @@
+.menu-parent {
+  background-color: white;
+  width: 21vw;
+  height: 100vh;
+  overflow: scroll;
+
+  .link-container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    .link-item-container {
+      margin: 0 20px;
+      border-bottom: 1px solid grey;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+
+      .link-item {
+        margin-left: 10px;
+        font-family: roboto;
+        color: black;
+        font-size: 0.95em;
+        font-weight: 500;
+      }
+    }
+  }
+}

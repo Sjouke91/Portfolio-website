@@ -9,12 +9,13 @@ import Animation from "./pages/animation/Animation";
 
 import NasaImages from "./pages/nasa/NasaImages";
 import Bollie from "./pages/bolComponents/Bollie";
+import Tesla from "./pages/tesla/Tesla";
 
 function App() {
   return (
     <div className="App" style={{ position: "relative" }}>
       <div style={{ position: "absolute", zIndex: 2 }}>
-        <Navigation color="white"></Navigation>
+        {/* <Navigation color="white"></Navigation> */}
       </div>
       <div>
         <Switch>
@@ -25,6 +26,7 @@ function App() {
           <Route path="/nasa" component={NasaImages}></Route>
           <Route path="/animation" component={Animation}></Route>
           <Route path="/bollie" component={Bollie}></Route>
+          <Route path="/tesla" component={Tesla}></Route>
         </Switch>
       </div>
     </div>
