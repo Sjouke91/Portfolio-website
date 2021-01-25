@@ -35,10 +35,9 @@
 .car-properties {
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 55px;
 
   .prop {
-    border-right: 1px solid black;
     padding: 20px;
     width: 15vw;
     height: 8vw;
@@ -52,11 +51,12 @@
       border: none;
       background-color: transparent;
       color: black;
-      border: 3px solid black;
+      border: 2px solid black;
       height: 40px;
       width: 160px;
       border-radius: 20px;
       transition: 0.5s ease;
+      font-weight: 500;
 
       cursor: pointer;
       z-index: 100;
@@ -65,5 +65,24 @@
       background-color: black;
       color: white;
     }
+  }
+}
+
+.down-arrow {
+  animation: arrow-float 1s infinite ease;
+}
+
+@keyframes arrow-float {
+  0% {
+    transform: translateY(0%);
+  }
+  33% {
+    transform: translateY(10%);
+  }
+  66% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

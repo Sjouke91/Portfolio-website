@@ -5,6 +5,8 @@ import "./Tesla.scss";
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
+import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
+import MainPage from "./pages/MainPage";
 
 export default function Tesla() {
   const [menuOpen, set_menuOpen] = useState(false);
@@ -25,25 +27,14 @@ export default function Tesla() {
       <div className={`slide-in-menu ${menuClass}`}>
         <Menu></Menu>
       </div>
-      <div className="main-content">
-        <h1>Model Y</h1>
-        <div className="car-properties">
-          <div className="speed-prop prop">
-            <h3>2.6 s</h3>
-            <p>0 naar 100 km/u</p>
-          </div>
-          <div className="cargo-prop prop">
-            <h3>804 l</h3>
-            <p>Meeste bagageruimte in zijn klasse</p>
-          </div>
-          <div className="range-prop prop" style={{ border: "none" }}>
-            <h3>654 km</h3>
-            <p>Bereik (WLTP)</p>
-          </div>
-          <div className="button-prop prop" style={{ border: "none" }}>
-            <button>BESTEL NU</button>
-          </div>
-        </div>
+      <MainPage></MainPage>
+      <div
+        className="down-arrow"
+        style={{ position: "absolute", bottom: 20, width: "100vw" }}
+      >
+        <IconButton size="small">
+          <KeyboardArrowDownIcon fontSize="large" style={{ color: "white" }} />
+        </IconButton>
       </div>
     </div>
   );

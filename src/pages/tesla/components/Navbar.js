@@ -25,7 +25,7 @@ export default function Navigation({ color }) {
         <Navbar.Brand href="#home" style={{ color: color }}>
           <img src={logo} style={{ width: "6vw" }}></img>
         </Navbar.Brand>
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", marginLeft: "120px" }}>
           <Nav.Link className="navbarItem navLink" as={NavLink} to="/">
             MODEL S
           </Nav.Link>

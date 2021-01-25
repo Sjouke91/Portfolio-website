@@ -1,0 +1,116 @@
+.car-title {
+  animation: title-appear 0.5s ease-in;
+  color: white;
+}
+
+.speed-prop {
+  color: transparent;
+  animation: speed-appear;
+  animation-delay: 0.7s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.cargo-prop {
+  color: transparent;
+  animation: cargo-appear;
+  animation-delay: 1.2s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.range-prop {
+  color: transparent;
+  animation: range-appear;
+  animation-delay: 1.7s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+button {
+  animation-name: button-appear;
+  animation-delay: 2.2s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+
+@keyframes title-appear {
+  0% {
+    transform: translateY(100%);
+    color: transparent;
+  }
+  100% {
+    transform: translateY(0);
+    color: black;
+  }
+}
+
+@keyframes title-appear {
+  0% {
+    transform: translateY(100%);
+    color: transparent;
+  }
+  100% {
+    transform: translateY(0);
+    color: white;
+  }
+}
+
+@keyframes speed-appear {
+  0% {
+    color: transparent;
+  }
+  45% {
+  }
+  33% {
+  }
+  66% {
+  }
+  100% {
+    color: rgb(92, 92, 92);
+    border-right: 1px solid rgb(77, 77, 77);
+  }
+}
+@keyframes cargo-appear {
+  0% {
+    color: transparent;
+  }
+  5% {
+  }
+  33% {
+  }
+  66% {
+  }
+  100% {
+    color: rgb(92, 92, 92);
+    border-right: 1px solid rgb(77, 77, 77);
+  }
+}
+
+@keyframes range-appear {
+  0% {
+    color: transparent;
+  }
+  5% {
+  }
+  33% {
+  }
+  66% {
+  }
+  100% {
+    color: rgb(92, 92, 92);
+  }
+}
+
+@keyframes button-appear {
+  0% {
+    display: none;
+  }
+  5% {
+  }
+  33% {
+  }
+  66% {
+  }
+  100% {
+  }
+}
